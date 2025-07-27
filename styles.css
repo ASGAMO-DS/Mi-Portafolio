@@ -10,10 +10,14 @@
     --bg-white: #ffffff;
     --border-color: #e0e0e0;
     --highlight-bg: #eaf5fc;
+
+    /* Nuevo color para el botón CTA */
+    --cta-green: #28a745; 
+    --cta-green-dark: #218838;
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Para el scroll suave al formulario */
 }
 
 body {
@@ -93,7 +97,7 @@ body {
     color: var(--bg-white);
 }
 
-/* Separador con CSS pseudo-elementos */
+/* Separador con CSS pseudo-elementos (para el home) */
 .contact-info li:not(:last-child)::after {
     content: '|';
     color: #5f7a95;
@@ -176,6 +180,132 @@ body {
     color: var(--primary-dark);
 }
 
+/* --- ESTILOS ADICIONALES AÑADIDOS --- */
+
+/* Estilos para el botón de Llamada a la Acción (CTA) en el Header de index.html */
+.cta-button {
+    display: inline-block;
+    background-color: var(--cta-green); /* Color verde */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    /* margin-top: 10px; Si lo ves muy pegado en la lista, puedes descomentar */
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Evita que el texto se rompa */
+}
+
+.cta-button:hover {
+    background-color: var(--cta-green-dark); /* Un verde más oscuro al pasar el ratón */
+}
+
+/* Estilos para la sección del formulario de contacto (en index.html) */
+.contact-form-section {
+    background-color: var(--highlight-bg); /* Un fondo ligeramente diferente para destacar */
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    margin-top: 40px;
+}
+
+.contact-form-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+}
+
+.contact-form-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-secondary);
+}
+
+.contact-form-section .privacy-note {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 20px;
+}
+
+.contact-form-section .privacy-note a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.contact-form-section .privacy-note a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el contenido de las secciones de la política de privacidad (en politica-privacidad.html) */
+.policy-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--bg-white); /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.policy-section h2 {
+    color: var(--primary-dark);
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.policy-section p {
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.policy-section ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+}
+
+.policy-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para la navegación de la política de privacidad (botones de volver/ir al perfil) */
+.policy-nav-links {
+    margin-top: 20px; /* Para separarlo del título principal de la política */
+    margin-bottom: 30px; /* Espacio antes del contenido de la política */
+    text-align: center; /* Centrar los botones */
+    display: flex; /* Para controlar el separador */
+    justify-content: center; /* Centrar los items en el flexbox */
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos de navegación */
+}
+
+.policy-nav-links .nav-separator {
+    color: #a0a0a0; /* Color suave para el separador */
+    margin: 0 5px; /* Espacio alrededor del separador */
+}
+
+.back-button-simple {
+    display: inline-block;
+    background-color: #6c757d; /* Gris */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.back-button-simple:hover {
+    background-color: #5a6268;
+}
+
+
 /* --- Media Queries para Móviles --- */
 @media (max-width: 768px) {
     body {
@@ -199,5 +329,19 @@ body {
 
     .profile-summary, .main-content {
         padding: 25px 20px;
+    }
+
+    /* Ajustes para la política en móviles */
+    .policy-section {
+        padding: 15px;
+    }
+
+    .policy-section h2 {
+        font-size: 1.6em;
+    }
+
+    .policy-nav-links {
+        flex-direction: column; /* Apila los botones de navegación en móviles */
+        gap: 5px;
     }
 }
