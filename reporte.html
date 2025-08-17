@@ -1,14 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Dosquebradas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+
+    iframe {
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 100%;
+    }
+
+    .weather-container {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .weather-container h2 {
+      margin-bottom: 10px;
+      color: #444;
+    }
+    .current .temp {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #0077b6;
+    }
+    .forecast {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .hour-card {
+      background: #f9fafb;
+      border-radius: 12px;
+      padding: 8px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .hour-card h4 {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .hour-card .temp {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #0077b6;
+      margin: 4px 0;
+    }
+    .condition {
+      font-size: 0.85rem;
+      color: #333;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-<iframe width="1080" height="620" src="https://lookerstudio.google.com/embed/reporting/10fb2750-f037-4add-bd30-bad3aa20285a/page/p_okx5gnqdvd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-<h3>Datos de tráfico actuales</h3>
-<iframe src="https://embed.waze.com/iframe?zoom=14&lat=4.836598&lon=-75.669365&ct=livemap" width="1080" height="420" allowfullscreen></iframe>
+  <h1>Dashboard en tiempo real</h1>
 
+  <!-- Grid principal -->
+  <div class="grid">
+    <!-- Looker Studio -->
+    <iframe 
+      src="https://lookerstudio.google.com/embed/reporting/10fb2750-f037-4add-bd30-bad3aa20285a/page/p_okx5gnqdvd"
+      height="600">
+    </iframe>
 
+    <!-- Clima -->
+    <div class="weather-container">
+      <h2>Clima en Dosquebradas</h2>
+      <div class="current">
+        <div class="temp" id="current-temp">-- °C</div>
+        <div class="condition" id="current-condition">Cargando...</div>
+      </div>
+      <h3>Próximas horas</h3>
+      <div class="forecast" id="forecast"></div>
+    </div>
+  </div>
 
+  <!-- Mapa Waze -->
+  <iframe 
+    src="https://embed.waze.com/iframe?zoom=14&lat=4.836598&lon=-75.669365&ct=livemap"
+    height="420"
+    allowfullscreen>
+  </iframe>
+
+  <script>
+    const url = "https://api.open-meteo.com/v1/forecast?latitude=4.834&longitude=-75.673&current_weather=true&hourly=temperature_2m,precipitation,weathercode&timezone=auto";
+
+    const weatherCodes = {
+      0: "Despejado",
+      1: "Principalmente despejado",
+      2: "Parcialmente nublado",
+      3: "Nublado",
+      45: "Niebla",
+      48: "Niebla con escarcha",
+      51: "Llovizna ligera",
+      53: "Llovizna moderada",
+      55: "Llovizna intensa",
+      61: "Lluvia ligera",
+      63: "Lluvia moderada",
+      65: "Lluvia intensa",
+      71: "Nieve ligera",
+      73: "Nieve moderada",
+      75: "Nieve intensa",
+      95: "Tormenta ligera",
+      96: "Tormenta con granizo",
+      99: "Tormenta fuerte con granizo"
+    };
+
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        // Clima actual
+        const currentTemp = data.current_weather.temperature;
+        const currentCode = data.current_weather.weathercode;
+        document.getElementById("current-temp").textContent = `${currentTemp} °C`;
+        document.getElementById("current-condition").textContent = weatherCodes[currentCode] || "Condición desconocida";
+
+        // Pronóstico de próximas horas
+        const hours = data.hourly.time;
+        const temps = data.hourly.temperature_2m;
+        const codes = data.hourly.weathercode;
+
+        const now = new Date();
+        const forecastContainer = document.getElementById("forecast");
+        forecastContainer.innerHTML = "";
+
+        let count = 0;
+        for (let i = 0; i < hours.length && count < 6; i++) {
+          const hourTime = new Date(hours[i]);
+          if (hourTime > now) {
+            const temp = temps[i];
+            const condition = weatherCodes[codes[i]] || "N/D";
+
+            const card = document.createElement("div");
+            card.className = "hour-card";
+            card.innerHTML = `
+              <h4>${hourTime.getHours()}:00</h4>
+              <div class="temp">${temp} °C</div>
+              <div class="condition">${condition}</div>
+            `;
+            forecastContainer.appendChild(card);
+            count++;
+          }
+        }
+      })
+      .catch(err => console.error("Error obteniendo clima:", err));
+  </script>
 </body>
 </html>
