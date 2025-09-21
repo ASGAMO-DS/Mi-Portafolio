@@ -48,7 +48,7 @@
 
                     <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200">
                         <div class="lg:flex">
-                            <div class="lg:w-1/2 relative h-80 lg:h-auto bg-gray-200 p-4">
+                            <div class="lg:w-1/2 relative lg:h-auto bg-gray-200 p-4">
                                 <div class="w-full h-full relative group carousel-container">
                                     <div class="carousel-inner relative w-full h-full overflow-hidden rounded-lg">
                                         <div class="carousel-item active absolute w-full h-full opacity-100 transition-opacity duration-700" data-carousel-item>
@@ -87,7 +87,7 @@
 
                     <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200">
                         <div class="lg:flex lg:flex-row-reverse">
-                            <div class="lg:w-1/2 relative h-80 lg:h-auto bg-gray-200 p-4">
+                            <div class="lg:w-1/2 relative lg:h-auto bg-gray-200 p-4">
                                 <div class="w-full h-full relative group carousel-container">
                                     <div class="carousel-inner relative w-full h-full overflow-hidden rounded-lg">
                                         <div class="carousel-item active absolute w-full h-full opacity-100 transition-opacity duration-700" data-carousel-item>
@@ -126,7 +126,7 @@
                     
                     <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200">
                         <div class="lg:flex">
-                            <div class="lg:w-1/2 relative h-80 lg:h-auto bg-gray-200 p-4">
+                            <div class="lg:w-1/2 relative lg:h-auto bg-gray-200 p-4">
                                 <div class="w-full h-full relative group carousel-container">
                                     <div class="carousel-inner relative w-full h-full overflow-hidden rounded-lg">
                                         <div class="carousel-item active absolute w-full h-full opacity-100 transition-opacity duration-700" data-carousel-item>
@@ -172,41 +172,57 @@
     </main>
     
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.carousel-container').forEach(container => {
-                const inner = container.querySelector('.carousel-inner');
-                if (!inner) return;
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.carousel-container').forEach(container => {
+            const inner = container.querySelector('.carousel-inner');
+            if (!inner) return;
 
-                const items = inner.querySelectorAll('[data-carousel-item]');
-                let currentIndex = 0;
+            const items = inner.querySelectorAll('[data-carousel-item]');
+            let currentIndex = 0;
 
-                const showItem = (index) => {
-                    items.forEach((item, i) => {
-                        item.classList.toggle('opacity-100', i === index);
-                        item.classList.toggle('opacity-0', i !== index);
-                    });
-                };
+            // Transición suave para la altura
+            inner.style.transition = 'height 0.5s ease-in-out';
 
-                const nextBtn = container.querySelector('[data-carousel-next]');
-                const prevBtn = container.querySelector('[data-carousel-prev]');
-
-                if (nextBtn) {
-                    nextBtn.addEventListener('click', () => {
-                        currentIndex = (currentIndex + 1) % items.length;
-                        showItem(currentIndex);
-                    });
+            const showItem = (index) => {
+                // Ocultar todos los items
+                items.forEach((item, i) => {
+                    item.classList.toggle('opacity-100', i === index);
+                    item.classList.toggle('opacity-0', i !== index);
+                });
+                
+                // --- CÓDIGO NUEVO PARA AJUSTAR LA ALTURA ---
+                // Obtener el item activo
+                const activeItem = items[index];
+                if (activeItem) {
+                    // Establecer la altura del contenedor a la altura del item activo
+                    inner.style.height = `${activeItem.scrollHeight}px`;
                 }
+            };
 
-                if (prevBtn) {
-                    prevBtn.addEventListener('click', () => {
-                        currentIndex = (currentIndex - 1 + items.length) % items.length;
-                        showItem(currentIndex);
-                    });
-                }
-                showItem(currentIndex);
-            });
+            const nextBtn = container.querySelector('[data-carousel-next]');
+            const prevBtn = container.querySelector('[data-carousel-prev]');
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % items.length;
+                    showItem(currentIndex);
+                });
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex - 1 + items.length) % items.length;
+                    showItem(currentIndex);
+                });
+            }
+
+            // Asegurarse de que la altura inicial sea correcta al cargar la página
+            // y también al cambiar el tamaño de la ventana
+            window.addEventListener('load', () => showItem(currentIndex));
+            window.addEventListener('resize', () => showItem(currentIndex));
+            
+            showItem(currentIndex); // Mostrar el primer item
         });
-    </script>
-    <script async src="//www.instagram.com/embed.js"></script>
-</body>
-</html>
+    });
+</script>
+<script async src="//www.instagram.com/embed.js"></script>
