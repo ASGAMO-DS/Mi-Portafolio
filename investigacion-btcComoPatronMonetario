@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consideraciones sobre el bitcoin como posible patrón monetario internacional | Artículo de Reflexión</title>
+    
+    <meta name="description" content="Análisis sobre el modelo económico internacional, las criptomonedas, en especial el bitcoin, como una nueva oportunidad para cambiar la forma en que se relacionan a través del dinero las personas hoy en día.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-103JSTD0TW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-103JSTD0TW');
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+        p, li, blockquote {
+            font-family: 'Source Serif 4', serif;
+        }
+        sup {
+            font-size: 0.7em;
+            vertical-align: super;
+            margin-left: 2px;
+            color: #3b82f6; /* text-blue-500 */
+        }
+        .prose-custom p {
+            margin-bottom: 1.25rem;
+        }
+        .prose-custom ul {
+            margin-bottom: 1.25rem;
+        }
+        /* Estilo simple para la navegación de migas de pan */
+        .breadcrumb-nav a {
+            text-decoration: underline;
+            color: #3b82f6; /* text-blue-500 */
+        }
+        .breadcrumb-nav a:hover {
+            color: #1d4ed8; /* text-blue-700 */
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="container mx-auto max-w-4xl px-4 py-8 md:py-16">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Consideraciones sobre el bitcoin como posible patrón monetario internacional</h1>
+            <p class="text-lg text-slate-600 mt-4">Un artículo de reflexión sobre el futuro de los sistemas monetarios en la era digital.</p>
+            <p class="text-md text-slate-500 mt-6">
+                Por: Alejandro Steeven Galeano Moreno<br>
+                <span class="italic">Especialización en Alta Gerencia, Universidad Libre, Pereira, Colombia</span>
+            </p>
+            
+            <nav class="breadcrumb-nav text-sm text-slate-500 mt-6">
+                <a href="index.html">Perfil</a> > 
+                <a href="investigaciones.html">Investigaciones</a> > 
+                <span>Consideraciones sobre Bitcoin</span>
+            </nav>
+        </header>
+
+        <main class="prose-custom text-lg leading-relaxed">
+
+            <div class="text-sm text-slate-600 italic mb-4">
+                Publicado el 24 de Noviembre de 2021
+            </div>
+
+            <section id="resumen-abstract" class="mb-16 p-6 bg-slate-100 rounded-lg">
+                <h3 class="text-2xl font-semibold text-slate-800 mb-4">Resumen y Abstract</h3>
+                <p class="mb-4 text-base leading-relaxed italic">
+                    <strong>Resumen—</strong> El presente expondrá dos puntos importantes a considerar, el modelo económico internacional tal como se conoce hoy en día y las criptomonedas, en especial el bitcoin, como una nueva oportunidad para cambiar la forma en que se relacionan a través del dinero las personas hoy en día, la reflexión a desarrollar permitirá poner en tela de jucio tal posibilidad, conocer algunas alternativas que brinda el blockchain a través de su tecnología y como podría ayudar a resolver problemas de corrupción.
+                </p>
+                <p class="mb-4 text-sm text-slate-500">
+                    <strong>Palabras clave—</strong>Bretton woods, monedas fiduciarias, sistemas monetarios internacionales, bitcoin, criptomonedas.
+                </p>
+                <hr class="my-6 border-slate-300">
+                <p class="mb-4 text-base leading-relaxed italic">
+                    <strong>Abstract—</strong> This present will expose two important points to consider, the international economic model as it is known today and cryptocurrencies, especially bitcoin, as a new opportunity to change the way people relate to money today. The reflection to be developed will allow us to question such possibility, to know some alternatives that blockchain provides trougth its tecnology and how it could help to solve corruption problems.
+                </p>
+                <p class="text-sm text-slate-500">
+                    <strong>Keywords—</strong> Bretton woods, dolar, world economy, fiat currencies, international monetary systems, bitcoin, cryptocurrencies.
+                </p>
+            </section>
+            
+            <section id="introduccion" class="mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 border-b-2 border-blue-500 pb-2 mb-8">Introducción</h2>
+                <p>
+                    El trabajo a continuación presenta un artículo reflexivo, donde se discutirán temáticas asociadas a los sistemas económicos internacionales y las criptomonedas, esbozando así tres puntos importantes para la reflexión: las monedas fiduciarias, el bitcoin con su tecnología blockchain y el bitcoin versus monedas fiduciarias, permitiendo un conocimiento general del tema que cimienta algunos puntos claves para su entendimiento.
+                </p>
+                <p>
+                    Así mismo se profundizará en las bondades de las criptomonedas, sumado a sus desventajas y retos actuales, colocando en contraparte las monedas fiduciarias, quienes mostrarán sus desventajas al ser reguladas, controladas y manipuladas por entes centrales.
+                </p>
+                <p>
+                    Por otra parte se expondrá la tecnología blockchain como medio para combatir la corrupción e incluso aplicaciones adicionales que actualmente no se han desarrollado a plenitud pero con el correr de los años se ha ido implementando en mayor medida.
+                </p>
+                <p>
+                    Finalmente las conclusiones permitirán advertir un modelo clásico obsoleto (monedas fiat) y un muy joven aún criptomercado que deberá evolucionar más para ser considerado un candidato a un nuevo sistema económico. Así pues, el trabajo permitirá que las puntualizaciones últimas sean del lector.
+                </p>
+            </section>
+            
+            <section id="section1" class="mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 border-b-2 border-blue-500 pb-2 mb-8">1. Antecedentes de las Monedas Fiduciarias</h2>
+                <p>
+                    Existen innegablemente dentro de nuestra sociedad sistemas monetarios específicos que rigen la manera que tenemos para realizar transacciones socioeconómicas. Sistemas claramente supeditados a diversos factores tales como: los recursos vigentes, las innovaciones tecnológicas para la época, el dominio político de uno u otro país, etc. Estos sistemas han atravesado plurales estadios durante la historia de, por lo menos, los últimos dos siglos, estos han sido ampliamente trabajados en los referentes académicos de los recientes círculos estudiosos. Esto como lo demuestra Benchimol (2019, p. 3): “La evolución del sistema monetario hasta alcanzar la forma actual transitó una serie de estadios relevantes en la historia del capitalismo moderno, aproximadamente desde hace dos siglos. Esos estadios han sido largamente estudiados.”
+                </p>
+                <p>
+                    Con las monedas fiduciarias como principal medio de intercambio, gracias al pleno respaldo y regulación del estado tenemos la problemática ligada a la confianza, pues el valor intrínseco de las mismas monedas fiduciarias lo da la población en sí que descarga toda la responsabilidad sobre el estado que debería ser garante de mantener una economía estable con políticas monetarias acordes a las circunstancias puntuales que atraviese la nación en determinado momento, sin embargo es esa confianza ciega precisamente el problema que resuelven las criptomonedas al tener como objetivo principal separar el dinero y el estado con todo lo que esto implica.
+                </p>
+                <p>
+                    Así pues presentaremos un bosquejo general de los modelos empleados desde 1870 hasta llegar al actual, modelo que deberemos entender en profundidad para instaurar un espacio reflexivo sobre lo que se desarrollará a posteriori en el presente.
+                </p>
+                <p>
+                    Se podría referenciar como punto de partida el modelo patrón oro (1870-2010), periodo que es aceptado por la mayoría de autores tales como Benchimol (2019), Feenestra y Taylor (2014), los cuales demuestran cómo durante esta época el oro pasará a significar depósito de valor, instrumento de cambio, medio de pago y reserva de riqueza como refiere Bechimol:
+                </p>
+                <blockquote class="border-l-4 border-slate-300 pl-4 italic text-slate-600 my-6">
+                    Se establece una fijación del tipo de cambio asociada al oro, de forma tal que existe una convertibilidad entre el oro y la moneda nacional. En este marco, la emisión monetaria está respaldada por el oro. En segundo lugar, rige una amplia libertad para realizar transacciones que implican importar y exportar oro; no hay restricciones a las operaciones en cuenta corriente ni cuenta capital. En tercer lugar, cada banco central opera como prestamista de última instancia (2019, p. 4).
+                </blockquote>
+                <p>
+                    Sin embargo, este sistema monetario internacional se vio entorpecido debido a los períodos de guerras, las dos grandes guerras significaron cambios titánicos a la humanidad, a tal punto que se conformó en Estados Unidos una organización que se encarga -aún a día de hoy- de velar por los derechos de la humanidad, conocido hoy como ONU que convocó a una reunión internacional de más de 44 países en 1944 con sede en Bretton Woods y tenía como objetivo establecer un nuevo modelo económico internacional, dentro de este nuevo orden económico se estableció el oro como insuficiente para las relaciones económicas y financieras y por lo tanto las monedas nacionales de cada país tendrían una paridad con este a través del dólar, el cual a su vez tendría una respectiva tasa de cambio con el oro, cada onza del mineral tendría un valor de 35 dólares afianzando así a Estados Unidos como la principal potencia económica:
+                </p>
+                <blockquote class="border-l-4 border-slate-300 pl-4 italic text-slate-600 my-6">
+                    (…) Los llamados Acuerdos de Bretton Woods con el objeto de establecer un nuevo modelo económico mundial de postguerra, donde se determinarían las reglas de las relaciones comerciales y financieras entre los estados, fundamentalmente los países más industrializados. Los acuerdos mencionados también fueron denominados: Patrón Dólar Oro y Patrón de Cambio (Grillet, 2019, p. 2)
+                </blockquote>
+                <p>
+                    Así entonces se consolidó el modelo económico internacional conocido como patrón dólar oro, un modelo que estuvo en funcionamiento hasta que Mr. Richard Milhous Nixon, Presidente de Estados Unidos de América dio la orden de terminar la convertibilidad de oro en dólares lo que sería un detonante en los acuerdos mismos de Bretton Woods, desestabilizando su estructura en 1971.
+                </p>
+                <p>
+                    Para la fecha se hacía imposible seguir sosteniendo la cantidad existente en las reservas de oro con la cantidad de billetes en circulación, por lo cual la función de áncora que cumplía el dólar se veía sumamente tambaleante, finalmente la burbuja del dólar estalla para 1971 y genera diversas noticias alrededor del mundo, la más importante, el dólar deja de ser una moneda amparada en el oro y se convierte en una moneda fiduciaria.
+                </p>
+                <p>
+                    Así entonces, surge un nuevo modelo económico conocido como Bretton Woods dos, un nuevo orden económico mundial que sigue vigente al dìa de hoy, que a pesar de todas la críticas sigue teniendo al dólar como moneda guía y a su vez a EEUU como potencial mundial:
+                </p>
+                 <blockquote class="border-l-4 border-slate-300 pl-4 italic text-slate-600 my-6">
+                    La segunda etapa del reinado del dólar comienza entonces con la caída de la convertibilidad con el oro decretada por Richard Nixon el 15 de agosto de 1971. El dólar dejaría de cumplir con las condiciones establecidas en Bretton Woods para alcanzar ese sitial. Sin embargo, no dejaría de cumplir su papel como dinero mundial. Acaso con un nuevo cariz, el dominio del dólar no se vería conmovido. (Benchimol, 2019, p. 7.)
+                </blockquote>
+            </section>
+            
+            <section id="section2" class="mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 border-b-2 border-blue-500 pb-2 mb-8">2. Antecedentes de Bitcoin y las Criptomonedas</h2>
+                <p>
+                    El Bitcoin fue lanzado en el año 2009 por Satoshi Nakamoto, pseudónimo utilizado para referirse a la persona o al grupo de personas detrás de los creadores de la criptomoneda, quienes a la fecha permanecen en el anonimato.
+                </p>
+                <p>
+                    Bitcoin, al ser anónimo, presenta dificultades ya que puede ser fácilmente relacionado con actividades ilegales como lavado de dinero o financiamiento del terrorismo facilitando el tráfico ilegal de drogas, armas y explosivos, ciberdelincuencia y trata de personas.
+                </p>
+                <p>
+                    Como criptomoneda descentralizada, no depende de un banco central, oponiéndose a estos al hacer uso de la tecnología blockchain o cadena de bloques, tecnología que sustenta bitcoin, la cual impide el doble gasto (Nakamoto, 2008.)
+                </p>
+                <p>
+                    Nakamoto pertenecía a los cypher-punks, movimiento que pretendía restarle control a las autoridades centrales y organizar sistemas que protegieran la información personal de los individuos a través del anonimato, es por esto que en la crisis financiera del 2008, ante la pérdida de confianza en la banca por la inestabilidad de la misma, pues los recursos de los particulares estaban siendo desviados por los gobiernos centrales para salvar la banca, decide proponer un nuevo sistema que no depende de ninguna autoridad central, el Bitcoin.
+                </p>
+                <p>
+                    Blockchain es una cadena de bloques interconectados entre sí, cada bloque contiene la información de las transacciones ejecutadas, así como el hash de cada bloque, esto es una especie de huella digital, única e irrepetible que hacen distinguible un bloque de otro, adicionalmente la fecha y hora de extracción del bloque con el respectivo hash del bloque anterior, pues deben quedar encadenados.
+                </p>
+                <p>
+                    Bitcoin fue concebido como dinero electrónico para realizar pagos online sin necesidad de hacer uso de intermediarios (Nakamoto, 2008), se presenta como dinero electrónico en efectivo, un medio de pago más económico que la tarjeta de crédito o las transacciones SWIFT, siendo individual y anónimo. (Urdaneta, Carvallo, Borgucci, 2020.) Bitcoin no solo se ha presentado como dinero electrónico, en la actualidad es considerado un cripto activo, pues alberga valor y sus poseedores esperan obtener beneficios en un futuro (Padilla, 2020.)
+                </p>
+                <figure class="my-8 text-center">
+                    <img src="https://placehold.co/800x400/e2e8f0/475569?text=Figura+1:+Modelo+P2P" alt="Diagrama de transacciones Peer to Peer de Bitcoin" class="mx-auto rounded-lg shadow-md">
+                    <figcaption class="mt-2 text-sm text-slate-600 italic">
+                        Figura 1. Transacciones Peer to Peer de Bitcoin, blockchain, un modelo para eliminar los intermediarios (Bancos, Estado).<br>Fuente: Elaboración propia a partir de (Nakamoto, 2008)
+                    </figcaption>
+                </figure>
+                <p>
+                    Bitcoin tiene un límite fijo de monedas (21.000.000) 21 millones de bitcoins, que para este estudio describiremos como base monetaria, sus transacciones son validadas a través de mineros que validan la fiabilidad de las transacciones. La filosofía del Bitcoin busca otorgarle más poder al individuo y restarlo a los entes centrales, al suprimirlos del sistema, siguiendo los lineamientos del individualismo planteado por Frederich Hayek, de la escuela austriaca.
+                </p>
+                <p>
+                    Por otro lado es costoso en cuanto al uso de recursos naturales, pues la mineria del bitcoin tiene un alto consumo energético, ya que su red de computadoras interconectadas en la blockchain es la más grande del mundo, siendo incluso la red con mayor capacidad de cómputo de todo el planeta, si bien hay mineros buscando energías más limpias como la solar para conectar sus monstruosos equipos, actualmente sigue siendo una gran oportunidad de mejora por parte de Bitcoin.
+                </p>
+                <p>
+                    Las ventajas de Bitcoin, por otra parte, son innumerables, pues encontramos que es un sistema incorruptible gracias a su cadena de bloques previamente explicada, ningún ente puede aumentar su base monetaria a placer ya que desde un inicio están definidos los 21 millones de bitcoins, caso opuesto a lo que sucede con las monedas fiduciarias, tampoco es susceptible a falsificaciones ya que es imposible crear bitcoins fuera de la red blockchain gracias a la enorme capacidad de cómputo que supervisa y blinda la red de falsificadores, sus transacciones son inmediatas y electrónicas ya que viajan por internet, los costos de las transacciones son bajos gracias al esquema que tiene definido y todos los mineros que trabajan por sus respectivas recompensas.
+                </p>
+                <p>
+                    Teniendo en cuenta todo lo anterior, bitcoin se ha convertido en un activo real digital, siendo esto lo que lo hace tan atractivo y único, lo que hace pensar que podría ser la evolución del dinero tal como lo conocemos en la actualidad, evolución que permitiría contar con un dinero más transparente, más honesto, menos manipulable, incorruptible, sofisticado y sobre todas las cosas, con un sistema accesible a toda la población.
+                </p>
+                <p>
+                    En todo caso atrás del Bitcoin se encuentra la tecnología blockchain, la cual pertenece a la cuarta revolución industrial y podría ser el mayor aliado para combatir la corrupción en el mundo gracias a la transparencia que ofrece, si bien el Bitcoin aún no está 100% consolidado en el mundo el blockchain lo hará en algún momento con sus posibles aplicaciones para alterar los actuales modelos económicos, cambios en los mercados energéticos, identidad digital, cadenas de valor o atención a la salud y servicios financieros.
+                </p>
+            </section>
+            
+            <section id="section3" class="mb-16">
+                 <h2 class="text-3xl font-bold text-slate-900 border-b-2 border-blue-500 pb-2 mb-8">3. Bitcoin versus Monedas Fiduciarias</h2>
+                <p>
+                    El panórama bosquejado hasta este punto deja entrever dos miradas en apariencia lejanas sobre la manera en que la economía actual funciona, por un lado una mirada clásica, asentada a la historia de la humanidad, sus alcances, problemáticas y ventajas están a la mano de cualquier persona, son en todo caso, lo que el mundo es hoy en día a nivel económico.
+                </p>
+                <p>
+                    El bitcoin (BTC) por otro lado cimienta las bases, de lo que será para el presente, una reforma absoluta a los sistemas económicos internacionales, representa el evidente auge de la tecnología, herramienta esta que cada dìa se inmiscuye más en la tranquilidad de los hogares y permite, en definitiva, una más rápida y sencilla ejecución de las labores burocráticas del ser humano.
+                </p>
+                <p>
+                    La discusión insta un espacio reflexivo que puede encerrarse bajo la pregunta ¿Deben los modelos económicos internacionales mutar al uso de las criptomonedas? El presente considera que existen varias consideraciones antes de aseverar alguna respuesta posible, se permitirá que el espacio reflexivo acá presentado invite a cada uno de los lectores a sopesar.
+                </p>
+                <p>
+                    Entonces bien, el Bitcoin ha sido una moneda que desde su nacimiento mismo ha convocado a estrepitosas vocerías que le han permitido ser reconocido mundialmente y, a su vez, estar lleno de simpatizantes y detractores, su propio creador sigue siendo, más de una década después, completamente anónimo.
+                </p>
+                <p>
+                    Sin embargo ha sido muy claro el mensaje de Bitcoin como software, una intención decidida de arrebatar el poder a los entes estatales y permitir el comercio de usuario a usuario con mayores libertades, menos posibilidades corruptibles, más versatilidad y más barato, un mensaje que debe ser revisado pues encontraremos algunos importantes que deben ser analizados:
+                </p>
+                <p>
+                    A pesar de ser una criptomoneda descentralizada, podemos ver que, existen bancos sumamente reconocidos que ofrecen gestoría a grupos de inversores en criptomonedas, en otros casos existen criptomonedas lanzadas oficialmente por estados nación como el caso de Venezuela y en otras ocasiones se trata de monedas con representantes de valor (oro, petróleo, diamantes) como sucedió en los primeros acuerdos de Bretton Woods con el dólar y el oro.
+                </p>
+                <p>
+                    Temáticas que deben ser tomadas a consideración, sobre todo cuando se trata de una moneda que al parecer tiene como fin, entre otras cosas, el acabar con un sistema económico internacional en apariencia obsoleto y corrupto pero se encuentra navegando en aguas turbias que parecen mostrar, no más que, una cara diferente que una misma moneda.
+                </p>
+                <p>
+                    Sin embargo es claro que el modelo vigente hoy en día, un modelo de monedas fiduciarias, no es óptimo en su desempeño y crea graves problemas a la hora de operar, el bitcoin, por lo que el alcance del análisis del presente logra esquematizar presentarìa en todo caso ya sea un sistema mejor para operar o un sistema con los mismos fallos mayores y otros menores asociadas a la adaptación para entrar en rigor.
+                </p>
+                <blockquote class="border-l-4 border-slate-300 pl-4 italic text-slate-600 my-6">
+                    Hasta el siglo XX, las transacciones financieras se realizaban por medio de monedas como el euro, el dólar o el yen, las cuales son emitidas por el Gobierno o el banco central de una nación y lo más importante, es que funcionan por la confianza que la sociedad ha depositado en este sistema financiero. Aunque hoy en día este sistema esté vigente y la industria bancaria sigue funcionando, en varias ocasiones esta ha roto la confianza de muchos de sus consumidores, especialmente por la mala fama que ha tenido en los últimos cien años. El caso más reciente se evidenció en el 2008, cuando colapsó la relación entre los clientes y las instituciones financieras, el cual dejó como resultado una crisis financiera y, por mencionar una de las consecuencias, en Estados Unidos se perdieron más de 8.7 millones de empleos, se cerraron 170.000 pequeñas empresas, se presentaron más de tres millones de ejecuciones hipotecarias y millones de personas se declararon en bancarrota (Sanchez y Arredondo, 2020, p. 45.)
+                </blockquote>
+                <p>
+                    Así entonces, podemos ver una moneda que surge en medio de la pugna por dominar los mercados globales asociada a las contradicciones a escala mundial entre las enormes corporaciones globales, a la vez, representa un hito reciente y difícil de desvelar y anticipar, una oportunidad nueva de mercado que deberá tener más tiempo para consolidarse y a final de cuentas ser comprendida en su totalidad y posteriormente tener una posibilidad de significar un nuevo orden económico que haría honor a un mundo cada vez más virtualizado.
+                </p>
+            </section>
+
+            <section id="conclusiones" class="mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 border-b-2 border-blue-500 pb-2 mb-8">4. Conclusiones</h2>
+                <p>
+                    Las temáticas abordadas permiten tener ciertas claridades sobre el panorama actual del orden económico mundial, es conclusivo que el modelo fiduciario, fiat o bretton woods dos actual es inconsistente, tiene muchas problemáticas asociadas y como mínimo necesita una evolución radical.
+                </p>
+                <p>
+                    Así mismo, las criptomonedas pueden surgir como una posible respuesta a esta necesidad, en todo caso, si la virtualización llega a cada uno de los rincones de la humanidad, las criptomonedas serían la representación de la virtualización del dinero.
+                </p>
+                <p>
+                    No podemos desconocer, sin embargo, que existen bastantes interrogantes respecto a su uso, y se debe esperar a tener un conocimiento más certero del terreno antes de iniciar pasos tan decisivos para el desarrollo de la historia económica de la humanidad.
+                </p>
+                <p>
+                    La reflexión expuesta deja como limitante claro el tiempo, en tanto es una temática relativamente nueva que debe matizarse mayormente y permitir que el paso de los años la instaure, o no, como una de las próximas apuestas económicas para un nuevo orden mundial.
+                </p>
+                <p>
+                    Será sumamente interesante el revisar, a posterioridad, como se han ido contrapesando las diferentes posturas frente al tema y, con una mayor amplitud frente al tema, aseverar una posición más tangible sobre lo que podría llegar a ser el dinero en un futuro, muy diferente a lo que conocemos hoy en día.
+                </p>
+            </section>
+            
+            <section id="copyright-notice" class="mb-16">
+                 <div class="text-xs italic text-slate-500 p-4 border-t border-b border-slate-200">
+                    <p><strong>Aviso de copyright.</strong> Los autores que se someten a esta conferencia están de acuerdo en los siguientes términos: Los autores conservan los derechos de autor sobre su trabajo, al tiempo que permite a la conferencia para colocar este trabajo no publicado bajo una licencia Creative Commons Attribution License, que permite a otros acceder, utilizar libremente y compartir el trabajo, con un reconocimiento de la autoría de la obra y su presentación inicial en esta conferencia. Los autores son capaces de renunciar a los términos de la licencia CC y celebrar acuerdos contractuales separados, adicionales para la distribución no exclusiva y posterior publicación de este trabajo (por ejemplo, publicar una versión revisada en una revista, publicarla en un repositorio institucional y publicar en un libro), con un reconocimiento de su presentación inicial en esta conferencia. Además, se anima a los autores a publicar y compartir su línea de trabajo (por ejemplo, en repositorios institucionales o en su página web) en cualquier momento antes y después de la conferencia. Los autores están de acuerdo con los términos de este Aviso de Derechos de Autor, que se aplicarán a la presente comunicación, siempre y cuando se publica por la presente Conferencia.</p>
+                 </div>
+            </section>
+
+            <section id="fuentes">
+                <h2 class="text-3xl font-bold text-slate-900 border-b-2 border-blue-500 pb-2 mb-8">Referencias</h2>
+                <ul class="list-disc list-inside text-base space-y-3">
+                    <li>Benchimol, P. (2019). Estructura del sistema monetario internacional: repensando la dinámica actual a partir de sus transformaciones históricas. <a href="https://www.redalyc.org/jatsRepo/259/25964619002/index.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Ver fuente</a></li>
+                    <li>Grillet, A. (2019). Patrones monetarios internacionales. Revista venezolana Análisis de Coyuntura. XXV (1), 151-165. <a href="https://www.redalyc.org/journal/364/36465108007/html/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Ver fuente</a></li>
+                    <li>Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Ver fuente</a></li>
+                    <li>Padilla, J. (2020). Blockchain y contratos inteligentes: aproximación a sus problemáticas y retos jurídicos. Revista de derecho privado. (39), 175-201. <a href="https://www.redalyc.org/journal/4175/417564980007/417564980007.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Ver fuente</a></li>
+                    <li>Sanchez, L. & Arredondo, J. (2020). Prediciendo el precio del Bitcoin, y más. Suma de negocios. 11(24), 42-52. <a href="http://www.scielo.org.co/pdf/sdn/v11n24/2027-5692-sdn-11-24-42.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Ver fuente</a></li>
+                    <li>Urdaneta, A. Carvallo, Y. Borgucci, E. (2020). Bitcoin y la teoría monetaria de Friedman y Mises. Evidencias estadísticas. RCS Revista Ciencias sociales. XXVI (4). <a href="https://www.redalyc.org/jatsRepo/280/28065077020/index.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Ver fuente</a></li>
+                    <li><a href="https://www.bancomundial.org/es/news/feature/2019/01/24/blockchain-como-asegurarseque-cada-dolar-llegue-a-quien-lo-necesita" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Banco Mundial - Blockchain: cómo asegurarse de que cada dólar llegue a quien lo necesita</a></li>
+                    <li><a href="http://www.mineriareal.com/proyecto.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Minería Real - Proyecto (PDF)</a></li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-16 pt-8 border-t border-slate-300">
+            <p class="text-sm text-slate-500">© 2025 Alejandro Galeano. Todos los derechos reservados.</p>
+                    </footer>
+
+    </div>
+
+</body>
+</html>
