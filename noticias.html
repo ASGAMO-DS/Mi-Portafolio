@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prensa y Entrevistas | Alejandro Galeano</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 
+    <style>
+        /* Estilo para que los embeds se vean bien */
+        .media-embed {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v18.0" nonce="aAbBcCdD"></script>
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800">Prensa y Entrevistas</h1>
+            <a href="index.html" class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                &larr; Volver al Inicio
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="noticias" class="py-16 sm:py-24">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+                        Prensa y Entrevistas 📰
+                    </h2>
+                    <p class="mt-4 text-xl leading-8 text-gray-700 max-w-3xl mx-auto">
+                        Cobertura en medios de comunicación sobre mi trabajo en Inteligencia Artificial y tecnología.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-16 lg:gap-24">
+
+                    <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200">
+                        <div class="lg:flex">
+                            <div class="lg:w-1/2 p-8 flex flex-col justify-center">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">Mención sobre IA en El Diario del Otún</h3>
+                                <div class="mt-4 text-sm text-gray-600 space-y-2">
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" /></svg>
+                                        <span><span class="font-semibold">Medio:</span> El Diario del Otún</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18" /></svg>
+                                        <span><span class="font-semibold">Fecha:</span> [Colocar Fecha de la Noticia]</span>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 leading-relaxed mt-4">Mención en el artículo del periódico local 'El Diario del Otún' sobre la charla de Inteligencia Artificial dirigida a emprendedores de la región.</p>
+                                <a href="URL_DEL_ARTICULO_EN_LA_WEB_DEL_DIARIO" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-center">
+                                    Leer Artículo Completo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200">
+                        <div class="lg:flex lg:flex-row-reverse">
+                            <div class="lg:w-1/2 relative h-[550px] bg-black">
+                                <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" class="media-embed" title="Entrevista sobre Inteligencia Artificial en Que Buena" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="lg:w-1/2 p-8 flex flex-col justify-center">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">Entrevista sobre IA en Que Buena Dosquebradas</h3>
+                                <div class="mt-4 text-sm text-gray-600 space-y-2">
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-1.621-.871A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25A2.25 2.25 0 015.25 3h13.5A2.25 2.25 0 0121 5.25z" /></svg>
+                                        <span><span class="font-semibold">Medio:</span> Emisora Que Buena (YouTube)</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 mr-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18" /></svg>
+                                        <span><span class="font-semibold">Fecha:</span> [Colocar Fecha de la Entrevista]</span>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 leading-relaxed mt-4">Entrevista en el canal de YouTube de la emisora 'Que Buena Dosquebradas' sobre el impacto de la Inteligencia Artificial en los negocios locales y el emprendimiento.</p>
+                                <a href="URL_DEL_VIDEO_EN_YOUTUBE" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-red-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-700 transition-colors text-center">
+                                    Ver Entrevista en YouTube
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
