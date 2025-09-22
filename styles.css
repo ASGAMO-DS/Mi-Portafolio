@@ -148,6 +148,12 @@ body {
     margin-left: 12px;
 }
 
+.cta-footer {
+    background-color: var(--primary-dark); /* Mismo fondo oscuro que la cabecera */
+    padding: 25px 40px;
+    text-align: center;
+    border-top: 1px solid #4a6580; /* Una línea sutil para separar */
+}
 
 /* --- Sección Resumen de Perfil --- */
 .profile-summary {
@@ -230,19 +236,21 @@ body {
 /* Estilos para el botón de Llamada a la Acción (CTA) en el Header de index.html */
 .cta-button {
     display: inline-block;
-    background-color: var(--cta-green); /* Color verde */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color: transparent; /* Fondo transparente */
+    color: var(--cta-green) !important; /* Texto del color verde CTA */
+    border: 2px solid var(--cta-green); /* Borde del color verde CTA */
+    padding: 12px 25px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    /* margin-top: 10px; Si lo ves muy pegado en la lista, puedes descomentar */
-    transition: background-color 0.3s ease;
-    white-space: nowrap; /* Evita que el texto se rompa */
+    transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .cta-button:hover {
-    background-color: var(--cta-green-dark); /* Un verde más oscuro al pasar el ratón */
+    background-color: var(--cta-green); /* El fondo se rellena al pasar el mouse */
+    color: var(--primary-dark) !important; /* El texto se vuelve oscuro */
+    transform: scale(1.05);
 }
 
 /* Estilos para la sección del formulario de contacto (en index.html) */
