@@ -111,10 +111,9 @@ body {
 /* --- [NUEVO] Estilos para la barra de navegación de actividades --- */
 .activities-nav {
     padding: 20px 40px;
-    /* [CAMBIO] Línea separadora más gruesa y con el color azul de acento */
-    border-top: 2px solid var(--primary-blue); 
-    /* [CAMBIO] Fondo sutilmente más claro para crear contraste */
-    background-color: #253547; 
+    /* [NUEVO] Fondo degradado, más alegre y tecnológico */
+    background-image: linear-gradient(to right, #00c6ff, #0072ff); 
+    border-top: none; /* Eliminamos el borde anterior que ya no es necesario */
 }
 
 .activities-list {
@@ -129,20 +128,23 @@ body {
 }
 
 .activities-list li a {
-    color: var(--text-light);
+    color: var(--bg-white); /* [NUEVO] Color de texto blanco para que contraste */
     text-decoration: none;
     font-size: 0.9rem;
-    transition: color 0.3s ease;
+    font-weight: 500; /* Un poco más de peso para legibilidad */
+    transition: transform 0.2s ease;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2); /* Sombra para que el texto resalte */
 }
 
 .activities-list li a:hover {
     color: var(--bg-white);
+    transform: scale(1.05); /* Efecto de zoom sutil al pasar el mouse */
 }
 
-/* Separador '|' para la lista de actividades */
+/* Separador '|' para la lista de actividades, ahora blanco */
 .activities-list li:not(:last-child)::after {
     content: '|';
-    color: #5f7a95;
+    color: rgba(255, 255, 255, 0.5); /* Separador blanco semi-transparente */
     margin-left: 12px;
 }
 
