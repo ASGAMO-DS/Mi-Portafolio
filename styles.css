@@ -1,65 +1,62 @@
-/* --- [NUEVO] Paleta de Colores Tecnológica --- */
+/* --- Variables de Color y Configuraciones Globales --- */
 :root {
-    --dark-blue: #1a2238;      /* Azul oscuro tecnológico para el fondo de la tarjeta */
-    --accent-teal: #4fe8de;    /* Verde azulado para acentos y bordes */
-    --light-gray: #a0aec0;      /* Gris claro para texto secundario en la tarjeta */
-    --white: #ffffff;           /* Blanco para texto principal en la tarjeta */
-    --cta-green: #2dd4bf;      /* Verde para el botón principal */
-    --border-color: #2d3748;   /* Color para las líneas separadoras dentro de la tarjeta */
-    
-    /* Colores originales para el resto de la página */
+    --primary-dark: #2c3e50;
+    --primary-blue: #3498db;
+    --primary-blue-dark: #2980b9;
+    --text-light: #bdc3c7;
     --text-main: #333;
     --text-secondary: #555;
-    --bg-light: #f0f2f5;
-    --primary-blue: #3498db;
-    --border-color-light: #e0e0e0;
+    --bg-light: #f4f7f9;
+    --bg-white: #ffffff;
+    --border-color: #e0e0e0;
     --highlight-bg: #eaf5fc;
+
+    /* Nuevo color para el botón CTA */
+    --cta-green: #28a745; 
+    --cta-green-dark: #218838;
 }
 
-/* --- Estilos Generales --- */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Para el scroll suave al formulario */
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    background-color: var(--bg-light); /* Fondo general claro para la página */
+    background-color: var(--bg-light);
     color: var(--text-main);
     margin: 0;
-    padding: 10px; /* Padding para móviles */
+    padding: 20px;
 }
 
-/* --- [NUEVO DISEÑO] Contenedor Principal tipo Tarjeta Oscura --- */
+/* --- Contenedor Principal --- */
 .container {
-    max-width: 950px;
-    margin: 2rem auto;
-    background-color: var(--dark-blue); /* Fondo azul oscuro */
-    color: var(--white); /* Texto principal blanco por defecto dentro del contenedor */
-    border-radius: 24px;
-    box-shadow: 0 15px 35px rgba(26, 34, 56, 0.4);
-    border: 1px solid var(--border-color);
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     overflow: hidden;
 }
 
-/* --- [NUEVO DISEÑO] Encabezado y Perfil --- */
+/* --- Encabezado y Perfil --- */
 .header {
     display: flex;
-    flex-direction: column; /* Apilado en móvil */
     align-items: center;
-    gap: 2rem;
+    gap: 30px;
     padding: 40px;
-    text-align: center;
+    background-color: var(--primary-dark);
+    color: var(--bg-white);
+    flex-wrap: wrap; /* Para responsiveness */
 }
 
 .profile-photo {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 6px solid var(--accent-teal); /* Borde con color de acento */
+    border: 4px solid var(--bg-white);
     object-fit: cover;
-    flex-shrink: 0;
-    box-shadow: 0 0 20px rgba(79, 232, 222, 0.3);
+    flex-shrink: 0; /* Evita que la imagen se encoja */
 }
 
 .profile-info {
@@ -68,101 +65,76 @@ body {
 
 .profile-info h1 {
     margin: 0 0 5px 0;
-    font-size: 2.75rem;
-    font-weight: 800;
-    color: var(--white);
+    font-size: 2.5rem;
+    color: var(--bg-white);
 }
 
 .profile-info h2 {
-    margin: 0.5rem 0 1.5rem;
+    margin: 0;
     font-weight: 400;
-    font-size: 1.1rem;
-    color: var(--light-gray);
+    font-size: 1.2rem;
+    color: var(--text-light);
 }
 
-/* --- [NUEVO DISEÑO] Lista de Enlaces tipo "Píldora" --- */
 .contact-info {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center; /* Centrado en móvil */
-    gap: 0.75rem;
+    gap: 8px 12px; /* Espacio vertical y horizontal */
 }
 
 .contact-info li a {
-    color: var(--light-gray);
+    color: var(--text-light);
     text-decoration: none;
     font-size: 0.9rem;
-    transition: all 0.3s ease;
-    padding: 0.6rem 1rem;
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
+    transition: color 0.3s ease;
 }
 
 .contact-info li a:hover {
-    background-color: var(--border-color);
-    color: var(--white);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: var(--bg-white);
 }
 
-/* Se elimina el separador antiguo '|' */
+/* Separador con CSS pseudo-elementos (para el home) */
 .contact-info li:not(:last-child)::after {
-    content: ''; 
-    margin-left: 0;
+    content: '|';
+    color: #5f7a95;
+    margin-left: 12px;
 }
 
-/* --- [NUEVO DISEÑO] Botones de Acción (CTA) --- */
-.cta-button {
-    background-color: var(--cta-green);
-    color: var(--dark-blue) !important;
-    font-weight: 700;
-    border-color: var(--cta-green);
-}
-
-.cta-button:hover {
-    background-color: var(--white) !important;
-}
-
-.cta-button-secondary {
-    border-color: var(--light-gray);
-    font-weight: 700;
-}
-
-/* --- [ADAPTADO] Secciones de Contenido Dentro de la Tarjeta Oscura --- */
-.profile-summary, .main-content {
+/* --- Sección Resumen de Perfil --- */
+.profile-summary {
     padding: 30px 40px;
-    margin-top: 2rem;
-    border-top: 1px solid var(--border-color); /* Separador oscuro */
+    font-size: 1.1rem;
+    text-align: justify;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.profile-summary p, .main-content p, .main-content li {
-    font-size: 1.1rem;
-    color: var(--light-gray); /* Texto legible en fondo oscuro */
-    line-height: 1.8;
+/* --- Contenido Principal --- */
+.main-content {
+    padding: 30px 40px;
 }
 
 .main-content h2 {
     font-size: 2rem;
-    color: var(--white); /* Título legible en fondo oscuro */
-    border-bottom: 3px solid var(--accent-teal); /* Acento de color */
+    color: var(--primary-dark);
+    border-bottom: 3px solid var(--primary-blue);
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 .main-content h3 {
     font-size: 1.5rem;
-    color: #e2e8f0; /* Color blanco más suave */
+    color: #34495e;
     margin-top: 30px;
 }
 
-/* --- [SIN CAMBIOS] El resto de tus estilos se mantiene intacto --- */
+.main-content p, .main-content li {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
 
 .highlight {
     background-color: var(--highlight-bg);
@@ -172,12 +144,17 @@ body {
     margin: 20px 0;
 }
 
+.highlight strong {
+    color: var(--primary-blue-dark);
+}
+
 .separator-line {
     margin: 40px 0;
     border: 0;
-    border-top: 1px solid var(--border-color-light);
+    border-top: 1px solid var(--border-color);
 }
 
+/* --- Sección de Herramientas --- */
 .tools-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -189,7 +166,7 @@ body {
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid var(--border-color-light);
+    border: 1px solid var(--border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -200,41 +177,171 @@ body {
 
 .tool-card h4 {
     margin: 0 0 10px 0;
-    color: var(--text-main);
+    color: var(--primary-dark);
 }
 
+/* --- ESTILOS ADICIONALES AÑADIDOS --- */
+
+/* Estilos para el botón de Llamada a la Acción (CTA) en el Header de index.html */
+.cta-button {
+    display: inline-block;
+    background-color: var(--cta-green); /* Color verde */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    /* margin-top: 10px; Si lo ves muy pegado en la lista, puedes descomentar */
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Evita que el texto se rompa */
+}
+
+.cta-button:hover {
+    background-color: var(--cta-green-dark); /* Un verde más oscuro al pasar el ratón */
+}
+
+/* Estilos para la sección del formulario de contacto (en index.html) */
 .contact-form-section {
-    background-color: var(--highlight-bg);
+    background-color: var(--highlight-bg); /* Un fondo ligeramente diferente para destacar */
     padding: 60px 20px;
     text-align: center;
-    border-top: 1px solid var(--border-color-light);
+    border-top: 1px solid var(--border-color);
     margin-top: 40px;
 }
 
-/* (Aquí continúan el resto de tus estilos para el formulario, políticas, etc., sin cambios) */
-/* ... */
+.contact-form-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+}
+
+.contact-form-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-secondary);
+}
+
+.contact-form-section .privacy-note {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 20px;
+}
+
+.contact-form-section .privacy-note a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.contact-form-section .privacy-note a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el contenido de las secciones de la política de privacidad (en politica-privacidad.html) */
+.policy-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--bg-white); /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.policy-section h2 {
+    color: var(--primary-dark);
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.policy-section p {
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.policy-section ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+}
+
+.policy-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para la navegación de la política de privacidad (botones de volver/ir al perfil) */
+.policy-nav-links {
+    margin-top: 20px; /* Para separarlo del título principal de la política */
+    margin-bottom: 30px; /* Espacio antes del contenido de la política */
+    text-align: center; /* Centrar los botones */
+    display: flex; /* Para controlar el separador */
+    justify-content: center; /* Centrar los items en el flexbox */
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos de navegación */
+}
+
+.policy-nav-links .nav-separator {
+    color: #a0a0a0; /* Color suave para el separador */
+    margin: 0 5px; /* Espacio alrededor del separador */
+}
+
+.back-button-simple {
+    display: inline-block;
+    background-color: #6c757d; /* Gris */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.back-button-simple:hover {
+    background-color: #5a6268;
+}
 
 
-/* --- [ADAPTADO] Media Queries para Móviles y PC --- */
-@media (min-width: 768px) {
+/* --- Media Queries para Móviles --- */
+@media (max-width: 768px) {
     body {
-        padding: 20px;
+        padding: 10px;
     }
     
     .header {
-        flex-direction: row; /* Lado a lado en PC */
-        text-align: left;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 20px;
     }
 
     .contact-info {
-        justify-content: flex-start; /* Alinea los enlaces a la izquierda en PC */
+        justify-content: center; /* Centra los items de contacto en móvil */
     }
     
     .profile-info h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .profile-summary, .main-content {
-        padding: 30px 40px;
+        padding: 25px 20px;
+    }
+
+    /* Ajustes para la política en móviles */
+    .policy-section {
+        padding: 15px;
+    }
+
+    .policy-section h2 {
+        font-size: 1.6em;
+    }
+
+    .policy-nav-links {
+        flex-direction: column; /* Apila los botones de navegación en móviles */
+        gap: 5px;
     }
 }
