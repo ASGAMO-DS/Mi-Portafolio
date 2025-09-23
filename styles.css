@@ -34,7 +34,6 @@ body {
     background-color: var(--bg-white);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
 }
 
 /* --- Encabezado y Perfil --- */
@@ -46,6 +45,8 @@ body {
     background-color: var(--primary-dark);
     color: var(--bg-white);
     flex-wrap: wrap;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .profile-photo {
@@ -388,7 +389,7 @@ body {
 
 .back-button {
     display: inline-block;
-    background-color: var(--primary-blue);
+    background-color: #0072ff;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 8px;
@@ -398,7 +399,7 @@ body {
 }
 
 .back-button:hover {
-    background-color: var(--primary-blue-dark);
+    background-color: #0056b3;
 }
 
 /* --- Contenedor Principal y Títulos --- */
@@ -438,6 +439,7 @@ body {
     padding: 2rem;
     border: 1px solid var(--border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 .research-card:hover {
